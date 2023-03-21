@@ -1,0 +1,18 @@
+//RECURSIVE FUNCTION OF ADDING TWO NUMBERS
+#include<stdio.h>
+int sum(int a,int b);
+int main()
+{
+	int x,y;
+	scanf("%d %d",&x,&y);
+	int z=sum(x,y);
+	printf("\n");
+	sum(x,y);
+	printf("\n");
+	sum(x,y);
+}
+int sum(int a,int b)
+{
+	int c=a+b;
+	printf("%d",c);
+}
