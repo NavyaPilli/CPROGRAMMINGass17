@@ -1,0 +1,18 @@
+//BIGGEST OF THREE NUMBERS BY USING FUNCTIONS
+#include<stdio.h>
+int big(int a,int b,int c);
+ int main()
+{
+	int x,y,z;
+	scanf("%d %d %d",&x,&y,&z);
+	big(x,y,z);
+}
+int big(int a,int b, int c)
+{
+	if(a>b&&a>c)
+	printf("%d",a);
+	else if(b>c)
+	printf("%d",b);
+	else
+	printf("%d",c);
+}
